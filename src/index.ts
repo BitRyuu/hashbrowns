@@ -29,7 +29,7 @@ app.post('/api/hash', async (c) => {
       size: file.size,
       hash: hash,
     })
-  } catch (error) {
+  } catch {
     return c.json(
       { error: 'Failed to process file' },
       500
